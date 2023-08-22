@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8d78d7e39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Fullstack developper</p>
+                <h1>Hi, My name is <br>Sboul <span>Ilyass</span></h1>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- ----------------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/butme.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>My name is Sboul Ilyass, I have a degree in general engineering, I'm 34 years old and I'm a certified junior Fullstack developer. Welcome to my page and I will be happy to put my skills at your service.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('language')">language</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interefaces</li>
+                            <li><span>Web Developpement</span><br> Web app Developpement</li>
+                            <li><span>App Developpement</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Fullstack training at ARKX</li>
+                            <li><span>2020-2023</span><br> Freelance Coordinator</li>
+                            <li><span>2015-2019</span><br>Car rental agency manager</li>
+                            <li><span>2013</span><br>Mectronical engineer training at Caillau (France)</li>
+                            <li><span>2012</span><br>Mecatronical engineer training at Felco-Motion (Switzerland)</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Fullstack certification</li>
+                            <li><span>2014</span><br>Industrial Engineering Diploma</li>
+                            <li><span>2007</span><br>Baccaluréat (science mathématiques-B)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>French</span><br>Billingual</li>
+                            <li><span>Arabic</span><br>Billingual</li>
+                            <li><span>English</span><br>Advanced</li>
+                            <li><span>German</span><br>Beginner</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I will provide you with a customized website design that's perfect for your business or personal site. I'll work with you to create a design that matches your brand, while giving your customers a seamless user experience that will delight them.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-expand"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> I identifie new opportunities to create better user experiences. Aesthetically pleasing branding strategies help you effectively reach more customers. I also ensure that the end-to-end journey with your products or services meets desired outcomes.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design is an ongoing process comprising user experience (UX) and user interface (UI) elements. I ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. I base choices on user research and feedback.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </div>
+    <!-- -------------------------------Portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/page.PNG">
+                    <div class="layer">
+                        <h3>Testing page</h3>
+                        <p>The landing web page for a test page.</p>
+                        <a href="https://eroniste.github.io/page.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/facebook.PNG">
+                    <div class="layer">
+                        <h3>Facebook login page</h3>
+                        <p>The landing web page for a gaming news Website.</p>
+                        <a href="https://eroniste.github.io/facebook.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/netpic.png">
+                    <div class="layer">
+                        <h3>Netflix</h3>
+                        <p>The login web page for Netflix.</p>
+                        <a href="https://eroniste.github.io/netflix.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> sboul.ilyass@outlook.com</p>
+                    <p><i class="fa-duotone fa-phone"></i> 0707746434</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ilyass-sboul-92ab7360/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ilyass.eron/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/IlyassSbou67188" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="images/My-CV.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="text" name="email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sboul Ilyass made with <i class="fa-solid fa-heart"></i>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+    
+            // Now you can add code here to show the selected tab
+            // For example, you can add classes to the selected tab link and content to make them active:
+            var selectedTabLink = document.querySelector(`.tab-links[data-tab="${tabname}"]`);
+            var selectedTabContent = document.querySelector(`.tab-contents[data-tab="${tabname}"]`);
+    
+            if (selectedTabLink && selectedTabContent) {
+                selectedTabLink.classList.add('active-link');
+                selectedTabContent.classList.add('active-tab');
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
